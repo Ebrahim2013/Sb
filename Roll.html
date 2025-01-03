@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Frame</title>
+    <style>
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: roll 2s infinite linear;
+        }
+        .person {
+            width: 50px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            bottom: 0;
+            left: 45%;
+        }
+        @keyframes roll {
+            0% {
+                transform: translateX(-50%) rotate(0deg);
+            }
+            50% {
+                transform: translateX(50%) rotate(180deg);
+            }
+            100% {
+                transform: translateX(-50%) rotate(360deg);
+            }
+        }
+    </style>    
+</head>
+<body>
+    <div class="ball"></div>
+    <div class="person"></div>
+    <a href="animations.html">
+        Back to main Animations Page
+    </a>
+</body>
+</html>
